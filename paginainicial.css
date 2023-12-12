@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@font-face {
+    font-family: 'Futura LT Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura LT Regular'), url('FuturaLT.woff') format('woff');
+    }
+    @font-face {
+        font-family: "Lulo Clean W01 One";
+        src: url("https://db.onlinewebfonts.com/t/116d187134420de5733c7c45bbc80c46.eot");
+        src: url("https://db.onlinewebfonts.com/t/116d187134420de5733c7c45bbc80c46.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/116d187134420de5733c7c45bbc80c46.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/116d187134420de5733c7c45bbc80c46.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/116d187134420de5733c7c45bbc80c46.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/116d187134420de5733c7c45bbc80c46.svg#Lulo Clean W01 One")format("svg");
+    }
+    
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body{
+    overflow-x: hidden;
+}
+h1{
+    color: #F2EEF0;
+    text-align: center;
+    margin-top: 120px;
+    font-family: "Lulo Clean W01 One";
+    font-size: 1.9em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.menu-lateral{
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    left: 0;
+    height: 100%;
+    padding: 40px 10px 30px 10px;
+    border-right: 2px solid #EA6F07;
+    background-color: #087285;
+}
+
+ul{
+    height: 100%;
+    list-style: none;
+    margin: 40px;
+    margin-top: -6px;
+    text-align: center;
+    align-items: center;
+}
+
+ul li.item-menu a{
+    flex-direction: column;
+    color: #fff;
+    text-decoration: none;
+    font: 1.2rem 'Futura LT';
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #EA6F07;
+    border-radius: 6px;
+    border: 0;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+ul li.item-menu a .txt-link1{
+    margin-left: -5px;
+}
+
+ul li.item-menu:hover{
+    transform: scale(1.1);
+}
+
+/*calendário*/
+ h2{
+    color: #FFFFFF;
+    background-color: #087285;
+    border-radius: 7px;
+    font-family: 'Futura LT Regular', Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    margin-left: 40%;
+    padding: 10px;
+    margin-top: 1%;
+    margin-bottom: 30px;
+}
+
+main {
+    width: 100%;
+    margin-left: 25px;
+   
+
+}
+.calendario{
+    border-radius: 7px;
+    margin-left: 17%;
+    width: 80%;
+    height: 520px;
+    
+}

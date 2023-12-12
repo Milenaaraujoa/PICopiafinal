@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@font-face {
+    font-family: 'Futura LT Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura LT Regular'), url('FuturaLT.woff') format('woff');
+    }
+    @font-face {
+        font-family: "Lulo Clean W01 One";
+        src: url("https://db.onlinewebfonts.com/t/116d187134420de5733c7c45bbc80c46.eot");
+        src: url("https://db.onlinewebfonts.com/t/116d187134420de5733c7c45bbc80c46.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/116d187134420de5733c7c45bbc80c46.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/116d187134420de5733c7c45bbc80c46.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/116d187134420de5733c7c45bbc80c46.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/116d187134420de5733c7c45bbc80c46.svg#Lulo Clean W01 One")format("svg");
+    }
+    
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body{
+    overflow-x: hidden;
+}
+h1{
+    color: #F2EEF0;
+    text-align: center;
+    margin-top: 120px;
+    font-family: "Lulo Clean W01 One";
+    font-size: 1.9em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.menu-lateral{
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    left: 0;
+    height: 100%;
+    padding: 40px 10px 30px 10px;
+    border-right: 2px solid #EA6F07;
+    background-color: #087285;
+}
+
+ul{
+    height: 100%;
+    list-style: none;
+    margin: 40px;
+    margin-top: -6px;
+    text-align: center;
+    align-items: center;
+}
+
+ul li.item-menu a{
+    flex-direction: column;
+    color: #fff;
+    text-decoration: none;
+    font: 1.2rem 'Futura LT';
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #EA6F07;
+    border-radius: 6px;
+    border: 0;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+ul li.item-menu a .txt-link1{
+    margin-left: -5px;
+}
+
+ul li.item-menu:hover{
+    transform: scale(1.1);
+}
+
+/*calendário*/
+ h2{
+    color: #FFFFFF;
+    background-color: #087285;
+    border-radius: 7px;
+    font-family: 'Futura LT Regular', Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    margin-left: 20%;
+    padding: 10px;
+    margin-top: 1%;
+    margin-bottom: 30px;
+}
+
+main {
+    width: 100%;
+    margin-left: 20px;
+   
+
+}
+
+section{
+
+        height: 100%;
+        margin-left: 95px;
+        position:-webkit-sticky;
+}
+
+img {
+    width: 100%;
+    height: 380px;
+    border-radius: 7px;
+}
+/*card*/
+
+#container {
+    display: flex;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 1000px;
+    margin-left: 9%;
+}
+
+.card{
+    flex-direction: row;
+    background-color: #FFF;
+    margin: 3%;
+    width: 28%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #CCC;
+    transition: 0.1s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px #CCC;
+
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-content p {
+    font: 1rem 'Roboto', sans-serif;
+    line-height: 20px;
+}
+h3{
+    background-color: #EA6F07;
+    color: #F2EEF0;
+    font: 1.5em 'Futura LT Regular', cursive;
+    padding: 10px;
+    border-radius: 7px;
+    width: 70%;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    margin-left: 15%;
+    cursor: pointer;
+}
+
+/*tabela*/
+
+section details summary{
+    font: 1.5rem 'Futura LT', cursive;
+    background-color: #D9D9D9;
+    padding: 2%;
+    border-radius: 9px;
+    margin-bottom: 9px;
+    width: 90%;
+    margin-left: 7%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 1% auto;
+    margin-left: 7%;
+    background-color: #D9D9D9; 
+    
+  }
+
+  th{
+    font: 1.5rem 'Futura LT', cursive;
+  }
+  td{
+    font: 0.9rem 'Futura LT';
+    color: #747373;
+  }
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #8C8585; 
+    border-right: 1px solid #8C8585; /
+  }
+
+  th:last-child, td:last-child {
+    border-right: none; /* Remova a borda à direita para a última célula de cada linha */
+  }
+
+  tr:last-child th, tr:last-child td {
+    border-bottom: none; /* Remova a borda inferior para a última linha */
+  }
+
+
+.editar{
+        background-color: #EA6F07;
+        border: none;
+        border-radius: 6px;
+        margin-left: 44%;
+        padding: 8px 60px 8px 60px;
+        margin-top: 1%;
+        margin-bottom: 15px;
+        font: 1.0em 'Futura LT Regular', cursive;
+        color: #F2EEF0;
+        cursor: pointer;
+        box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+.editar:hover{
+    transform: scale(1.1);
+}
+
+.pagina{
+    margin-top: 1%;
+    margin-left: 40%;
+}

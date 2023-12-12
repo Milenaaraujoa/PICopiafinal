@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Eventos</title>
+    <link rel="icon" sizes="192x192" href="https://static.wixstatic.com/media/89b7b7_1b89619770264bbbb739fff71f91467b.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/89b7b7_1b89619770264bbbb739fff71f91467b.png" type="image/png"/>
+  <link rel="shortcut icon" href="https://static.wixstatic.com/media/89b7b7_1b89619770264bbbb739fff71f91467b.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/89b7b7_1b89619770264bbbb739fff71f91467b.png" type="image/png"/>
+  <link rel="apple-touch-icon" href="https://static.wixstatic.com/media/89b7b7_1b89619770264bbbb739fff71f91467b.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/89b7b7_1b89619770264bbbb739fff71f91467b.png" type="image/png"/>
+  <link href="https://fonts.cdnfonts.com/css/futura-lt" rel="stylesheet">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@font-face {
+    font-family: 'Futura LT Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura LT Regular'), url('FuturaLT.woff') format('woff');
+    }
+    @font-face {
+        font-family: "Lulo Clean W01 One";
+        src: url("https://db.onlinewebfonts.com/t/116d187134420de5733c7c45bbc80c46.eot");
+        src: url("https://db.onlinewebfonts.com/t/116d187134420de5733c7c45bbc80c46.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/116d187134420de5733c7c45bbc80c46.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/116d187134420de5733c7c45bbc80c46.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/116d187134420de5733c7c45bbc80c46.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/116d187134420de5733c7c45bbc80c46.svg#Lulo Clean W01 One")format("svg");
+    }
+    
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+h2{
+    color: #FFFFFF;
+    background-color: #087285;
+    border-radius: 7px;
+    font-family: 'Futura LT Regular', Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    margin-left: 45%;
+    padding: 10px;
+    margin-top: 1%;
+    margin-bottom: 30px;
+}
+
+h1{
+    color: #F2EEF0;
+    text-align: center;
+    margin-top: 120px;
+    font-family: "Lulo Clean W01 One";
+    font-size: 1.9em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.menu-lateral{
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    left: 0;
+    height: 100%;
+    padding: 40px 10px 30px 10px;
+    border-right: 2px solid #EA6F07;
+    background-color: #087285;
+}
+
+ul{
+    height: 100%;
+    list-style: none;
+    margin: 40px;
+    margin-top: -6px;
+    text-align: center;
+    align-items: center;
+}
+
+ul li.item-menu a{
+    flex-direction: column;
+    color: #fff;
+    text-decoration: none;
+    font: 1.2rem 'Futura LT';
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #EA6F07;
+    border-radius: 6px;
+    border: 0;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+ul li.item-menu a .txt-link1{
+    margin-left: -5px;
+}
+
+ul li.item-menu:hover{
+    transform: scale(1.1);
+}
+
+
+
+img {
+    width: 100%;
+    height: 380px;
+    border-radius: 7px;
+}
+
+main {
+    width: 90%;
+    margin-left: 19%;
+   
+}
+
+
+/*Eventos postar*/
+.container {
+    max-width: 85%;
+    margin: auto;
+    margin-left: 25px;
+}
+
+.form-box {
+    background-color: #D9D9D9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.label-input-group {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+}
+
+label {
+    font: 1rem 'Futura LT Regular';
+    margin-bottom: 8px;
+    margin-right: 10px; 
+}
+label[for="nome"]{
+    margin-right: 4px;
+}
+
+ label[for="nivel"]{
+    font: 1rem 'Futura LT Regular';
+    margin-right: 15px;
+}
+
+input,
+select,
+textarea {
+    font: 0.9rem 'Futura LT Regular', #747373;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+input[type="date"], input[type="time"], select{ font: 0.9rem 'Futura LT';
+    color: #747373;
+}
+
+hr{
+    margin-top: -2px;
+    margin-bottom: 10px;
+}
+.btn-container {
+    text-align: center;
+    margin-left: -390px;
+    margin-top: 27px;
+}
+
+
+
+
+/*CARD*/
+
+
+#container {
+    display: flex;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 1000px;
+    margin-left: 45px;
+}
+
+.card{
+    flex-direction: row;
+    background-color: #FFF;
+    margin: 3%;
+    width: 28%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #CCC;
+    transition: 0.1s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px #CCC;
+    transform: scale(1.1);
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-content p {
+    font: 1rem 'Roboto', sans-serif;
+    line-height: 20px;
+}
+h3{
+    background-color: #EA6F07;
+    color: #F2EEF0;
+    font: 1.5em 'Futura LT Regular', cursive;
+    padding: 10px;
+    border-radius: 7px;
+    width: 70%;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    margin-left: 15%;
+    cursor: pointer;
+}
+
+input[type="submit"], .DELETAR{
+    padding: 10px;
+    font: 1.0rem 'Futura LT Regular';
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    color: #FFF;
+    background-color: #EA6F07;
+    text-align: center;
+    width: 20%;
+    margin-bottom: 20px;
+    margin-left: 425px;
+}
+
+  </style>
+
+</head>
+<body>
+    
+    
+    <nav class="menu-lateral">
+        <h1>MENU</h1>
+        
+        <ul>
+            <li class="item-menu">
+            <a href="/pagina_inicial_user.html">
+                <span class="txt-link">Página inicial</span>
+        
+        </a>
+    </li>
+        <li class="item-menu">
+        <a href="relatorio.html"> 
+                <span class="txt-link1">Relatório</span>
+        </a>
+    </li>
+        <li class="item-menu">
+        <a href="edicaoeventos.html">
+            
+                <span class="txt-link1">Eventos</span>
+           
+        </a>
+    </li>
+        <li class="item-menu">
+        <a href="edicaoturmas.html">
+          
+                <span class="txt-link1">Turmas</span>
+           
+        </a>
+    </li>
+        <li class="item-menu">
+        <a href="https://www.academiaaguavida.com.br/">
+           
+                <span class="txt-link1">Logout</span>
+            </a>
+            </li>
+        </ul>
+        </nav>
+
+        <header>
+            <h2>EVENTOS</h2>
+        </header>
+
+        <main>
+            <div  id="4" class="container">
+                <div class="form-box">
+                    <form action="" method="">
+                        <div class="label-input-group">
+                            <label for="nome">Nome:</label> 
+                            <input type="text" id="nome" name="nome" required placeholder="Nome Completo">
+                            
+                        </div>
+                        <hr />
+                        <div class="label-input-group">
+                            <label for="nivel">Tipo:</label>
+                            <select id="nivel" name="nivel">
+                                <option value="Selecione">Selecione</option>
+                                <option value="natacao_bb">Natação bebê</option>
+                                <option value="natacao">Natação</option>
+                                <option value="hidro">Hidroginástica</option>
+                                <option value="evento">Evento</option>
+                            </select>
+                        </div>
+                        <hr />
+                        <div class="label-input-group">
+                            <label for="hora">Hora:</label>
+                            <input id="hora" type="time" name="hora" />
+                        </div>
+                        <hr />
+                        <div class="label-input-group">
+                            <label for="valor">Valor:</label>
+                            <input type="text" id="valor" name="valor" pattern="^\d{1,3}(.\d{3})*(,\d{2})?$" required>
+                        </div>
+                        <hr />
+                        <div class="label-input-group">
+                            <label for="data">Data:</label>
+                            <input id="data" type="date" name="data" />
+                        </div>
+                    
+                    </form>
+                    
+                    
+                </form>
+
+            </div>
+            <div class="btn-container">
+                <input type="submit" value="POSTAR">
+             </div>
+        </div>
+       
+
+            <section class="eventos">
+            
+                <div id="container">
+                    <div class="card">
+                       
+                        <img src="img/arraia.png" alt="Alunos na piscina de natação com chapéus de palha" />
+                        <div class="card-content">
+                            <h3>Arraia</h3>
+                            
+                        </div>
+                    </div>
+        
+                    <div class="card">
+                        <img src="img/carnaval.png" alt="Alunos na piscina de natação" />
+                        <div class="card-content">
+                            <h3>Carnaval</h3>
+                           
+                        </div>
+                    </div>
+        
+                    <div class="card">
+                        <img src="img/festival.png" alt="Alunos na piscina de natação" />
+                        <div class="card-content">
+                            <h3>Festival</h3>
+                            
+                        </div>
+                    </div>
+                </div>
+                <a href="#">
+                <button class="DELETAR">DELETAR</button>
+            </a>
+            </section>
+        </main>
+</body>
+</html>

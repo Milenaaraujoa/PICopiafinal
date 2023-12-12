@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@font-face {
+    font-family: 'Futura LT Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura LT Regular'), url('FuturaLT.woff') format('woff');
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+      }
+  body {
+    background-color: #e8e8e8; 
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  }
+
+.img-logo img{
+    align-items: center;
+    width: 30%;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+}
+
+  h3{
+    font: 1.6rem 'Futura LT Regular', sans-serif;
+    color: #e8e8e8;
+}
+
+  .top-bar, .bottom-bar {
+    height: 40px;
+    background-color: #087285; 
+    position: absolute;
+    width: 100%;
+  }
+
+  .top-bar {
+    top: 0;
+  }
+
+  .bottom-bar {
+    bottom: 0;
+
+  }
+
+  .login-container-wrapper {
+    background-color: #087285; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    height: 500px;
+    align-content: center;
+    justify-content: center;
+    margin-top: 95px;
+    margin-bottom: 5px;
+    padding: 0;
+  }
+
+  .login-container {
+    padding: 50px;
+  }
+
+  .login-container h3 {
+    text-align: center; 
+    margin-bottom: 20px; 
+    margin-top: -23px;
+
+  }
+
+  .login-container label {
+    font: 1rem 'Futura LT Regular', sans-serif;
+    color: #e8e8e8;
+    display: block; 
+    margin-bottom: 5px; 
+    margin-top: 10px;
+  }
+
+  .login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 7px;
+    border: none;
+  }
+
+  .login-container button {
+    font: 1.0rem 'Futura LT Regular';
+    background-color: #EA6F07;
+    color: #e8e8e8;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 10px;
+  }
+
+  .forgot-password {
+    margin: 10px;
+    font: 1.0rem 'Futura LT Regular', sans-serif;
+    text-decoration: none;
+    color: #e8e8e8;
+    display: block; 
+    margin-bottom: 10px; 
+    text-align: center;
+  }
+
+  a{
+    color: white;
+    text-decoration: none;
+    font: 1rem 'Futura LT Regular';
+  }
+  
